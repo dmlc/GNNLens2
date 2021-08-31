@@ -1,0 +1,10 @@
+*.pyc
+**/__pycache__
+examples/tutorial
+*.json.swp
+examples/tutorial_graph/
+examples/tutorial_nlabel/
+examples/tutorial_eweight
+vis_src/yarn.lock
+.DS_Store
+examples/.DS_Store

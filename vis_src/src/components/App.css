@@ -1,0 +1,110 @@
+@import '~antd/dist/antd.css';
+
+:root{
+  --header-height: 6vh;
+}
+.app{
+  width:100vw;
+  height:100vh;
+ /* overflow:hidden;*/
+}
+.col{
+  padding: 10px;
+  height: 100%;
+ /* overflow-y: hidden; */ 
+
+}
+.appHeader {
+  background-color: #32325D;
+  /* font-family: Roboto, sans-serif; */
+  font-family: "Arial Black", Gadget, sans-serif;
+  height: var(--header-height);
+  /* padding: 20px; */
+  color: white;
+  font-size: 3.5vh;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16), 0 0 0 4px rgba(0,0,0,0.08);
+  line-height: var(--header-height);
+}
+.appContent{
+  background-color: white;
+  height: calc(100% - var(--header-height));
+}
+.appLogo{
+  height:3.5vh;
+  padding: 1px 5px;
+}
+
+.shadowBox{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  margin: 10px;
+  display: block;
+  position:absolute; top:0; left:0; right:0; bottom:0
+}
+
+.ant-tabs-tabpane{
+    height: 100% !important;
+}
+.ant-tabs-content{
+    height: 100% !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+    opacity:0;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    opacity:0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+    opacity:0;
+}
+
+div.ViewTitle {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom : 2px;
+  padding-top: 0px;
+  font-size: 16px;
+  
+   color: #606E79;
+   
+   background: #F7F7F7;
+   /*border: .4px solid rgba(0,0,0, 0.2);
+   border-radius:6px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);*/
+}
+div.ViewBox {
+  /*border: .4px solid rgba(0,0,0, 0.2);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);
+    border-radius:6px;*/
+    padding:3px;
+    padding-bottom : 5px;
+    background: #FFFFFF;
+    
+}
+
+div#tooltip_proj {
+  position: absolute;        
+  display: inline-block;
+  padding: 1px;
+  font-family: 'Open Sans' sans-serif;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 2px;
+    pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+}
