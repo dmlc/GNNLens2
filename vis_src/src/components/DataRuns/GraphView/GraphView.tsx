@@ -245,7 +245,7 @@ export default class GraphView extends React.Component<IProps, IState>{
             // TODO: make default width configurable
             let edge_weight = 0.1;
             if(edge_weighted) {
-                edge_weight = current_eweights[i];
+                edge_weight = current_eweights[i] * 0.6;
             }
             let real_color = "#bbb";
             if(selectedNodeIdList.indexOf(source_list[i])>=0){
@@ -313,6 +313,7 @@ export default class GraphView extends React.Component<IProps, IState>{
         let selectedNodeIdList = subgs[subg_name][select_inspect_node].nodes;
         // ordered
         let selectedEdgeIdList = subgs[subg_name][select_inspect_node].eids;
+        let nweight = subgs[subg_name][select_inspect_node].nweight;
         let eweight = subgs[subg_name][select_inspect_node].eweight;
         
         // 2. Transform the graph layout.
@@ -369,6 +370,7 @@ export default class GraphView extends React.Component<IProps, IState>{
             real_color = color.slice();  // original color storage.
 
             if(selectedNodeIdList[selectedNodeOrder] === i){
+                node_weight = nweight[selectedNodeOrder];
                 selectedNodeOrder = selectedNodeOrder + 1;
             } else {
                 // Unfocused nodes color will be set to "#ddd".
@@ -409,7 +411,7 @@ export default class GraphView extends React.Component<IProps, IState>{
             let real_color = "#bbb";
             if(i === selectedEdgeIdList[selectedEdgeOrder]) {
                 link_color = "#bbb";
-                edge_weight = eweight[selectedEdgeOrder];
+                edge_weight = eweight[selectedEdgeOrder] * 0.6;
                 selectedEdgeOrder = selectedEdgeOrder + 1;
             }
             // Store the possible color. 
