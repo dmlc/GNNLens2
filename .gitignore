@@ -4,7 +4,8 @@ examples/tutorial
 *.json.swp
 examples/tutorial_graph/
 examples/tutorial_nlabel/
-examples/tutorial_eweight
+examples/tutorial_eweight/
+examples/tutorial_subgraph/
 vis_src/yarn.lock
 .DS_Store
 examples/.DS_Store
