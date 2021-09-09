@@ -43,7 +43,7 @@ export default class DataSelector extends React.Component<DataSelectorProps, Dat
                 <Row>
                         Graph:&nbsp;
                         <Select
-                            placeholder="Select a dataset"
+                            placeholder="Select a graph"
                             value={this.props.dataset_id  || undefined}
                             style={{ width: '170px' }}
                             onChange={this.onDatasetSelectorChange}
