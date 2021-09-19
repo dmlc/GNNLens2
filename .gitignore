@@ -9,3 +9,5 @@ examples/tutorial_subgraph/
 vis_src/yarn.lock
 .DS_Store
 examples/.DS_Store
+*.ipynb_checkpoints
+*.ipynb

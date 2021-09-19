@@ -2,16 +2,16 @@ import * as React from 'react';
 import { Select, Row } from 'antd';
 const Option = Select.Option;
 
-export interface EWeightSelectorProps {
-    eweight_options: any[], // eweight options
-    changeEWeight: any,  // change eweight
+export interface IProps {
+    EWeightOptions: any[], // eweight options
+    eweightList: any,      // selected eweight options
+    changeEWeight: any,    // change eweight
 }
 
-export interface EWeightSelectorState {
-}
+export interface IState {}
 
-export default class EWeightSelector extends React.Component<EWeightSelectorProps, EWeightSelectorState> {
-    constructor(props: EWeightSelectorProps) {
+export default class EWeightSelector extends React.Component<IProps, IState> {
+    constructor(props: IProps) {
         super(props);
         this.onEWeightSelectorChange = this.onEWeightSelectorChange.bind(this);
         this.state = {
@@ -22,12 +22,12 @@ export default class EWeightSelector extends React.Component<EWeightSelectorProp
         this.props.changeEWeight(value);
     }
     public render() {        
-        let {eweight_options} = this.props;
-        let disabledEWeightSelector = eweight_options.length <= 0
+        let {EWeightOptions} = this.props;
+        let disabledEWeightSelector = EWeightOptions.length <= 0
         let eweight_options_indexed = [];
-        for(let i = 0; i<eweight_options.length; i++){
+        for(let i = 0; i<EWeightOptions.length; i++){
             let eweight_object:any = {
-                "name": eweight_options[i],
+                "name": EWeightOptions[i],
                 "id": i
             }
             eweight_options_indexed.push(eweight_object);
@@ -41,6 +41,7 @@ export default class EWeightSelector extends React.Component<EWeightSelectorProp
                             style={{ width: '170px' }}
                             onChange={this.onEWeightSelectorChange}
                             disabled={disabledEWeightSelector}
+                            value={this.props.eweightList}
                         >
                             {eweight_options_indexed.map((d:any)=>(
                                 <Option value={d.name} key={d.id}>{d.name}</Option>

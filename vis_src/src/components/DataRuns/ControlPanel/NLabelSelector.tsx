@@ -3,12 +3,12 @@ import { Select, Row } from 'antd';
 const Option = Select.Option;
 
 export interface IProps {
-    nlabel_options: any[], // nlabel options
+    NLabelOptions: any[], // nlabel options
+    NLabelList : any,     // selected nlabel options
     changeNLabel: any   // change nlabel
 }
 
-export interface IState {
-}
+export interface IState {}
 
 export default class NLabelSelector extends React.Component<IProps, IState> {
     constructor(props: IProps) {
@@ -19,13 +19,13 @@ export default class NLabelSelector extends React.Component<IProps, IState> {
     public onNLabelSelectorChange(value: any[]) {
         this.props.changeNLabel(value);
     }
-    public render() {    
-        let {nlabel_options} = this.props;
-        let disabledNLabelSelector = nlabel_options.length <= 0;
+    public render() {
+        let {NLabelOptions} = this.props;
+        let disabledNLabelSelector =  NLabelOptions.length <= 0;
         let nlabel_options_indexed = [];
-        for(let i = 0; i<nlabel_options.length; i++){
+        for(let i = 0; i< NLabelOptions.length; i++){
             let nlabel_object:any = {
-                "name": nlabel_options[i],
+                "name":  NLabelOptions[i],
                 "id": i
             }
             nlabel_options_indexed.push(nlabel_object);
@@ -40,6 +40,7 @@ export default class NLabelSelector extends React.Component<IProps, IState> {
                         style={{ width: '170px' }}
                         onChange={this.onNLabelSelectorChange}
                         disabled={disabledNLabelSelector}
+                        value={this.props.NLabelList}
                         defaultValue={[]}
                     >
                         {nlabel_options_indexed.map((d:any)=>(

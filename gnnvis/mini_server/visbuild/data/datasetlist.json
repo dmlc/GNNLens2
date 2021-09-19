@@ -1,1 +1,1 @@
-{"datasets": [{"id": 1, "name": "tree-cycle"}], "success": true}
+{"datasets": [{"id": 1, "name": "Cora"}, {"id": 2, "name": "Citeseer"}], "success": true}

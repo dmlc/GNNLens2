@@ -213,7 +213,6 @@ export default class ForceDirectedGraphCanvas extends React.Component<IProps, IS
         var enabledForceDirected = this.props.graph_json.enable_forceDirected;
         var neighborSet = this.props.graph_json.NeighborSet;
         var colorLegend = this.props.graph_json.colorLegend;
-        var pieLegend = this.props.graph_json.pieLegend;
         var configuration = {
             "strength": 0.01,
             "radius":15,
