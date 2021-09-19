@@ -13,7 +13,12 @@ export interface IProps {
     contentHeight:number,
     NLabelList : any,
     eweightList: any,
-    changeEnableForceDirected : any
+    changeEnableForceDirected : any,
+    changeNLabelOptions: any,
+    changeEWeightOptions: any,
+    changeNLabel: any,
+    changeEWeight: any,
+    changeShowSource: any,
 }
 export interface IState {
     graph_object : any,
@@ -102,6 +107,11 @@ export default class DataRuns extends React.Component<IProps, IState>{
                 graph_object: data["graph_obj"]
             })
             this.props.changeEnableForceDirected(true);
+            this.props.changeNLabelOptions([]);
+            this.props.changeNLabelOptions([]);
+            this.props.changeNLabel([]);
+            this.props.changeEWeight([]);
+            this.props.changeShowSource(false);
          }
      }
      // Get associated model list and model data.
@@ -195,7 +205,7 @@ export default class DataRuns extends React.Component<IProps, IState>{
         //console.log('Component did update!')
         // If the dataset_id has been changed. 
         if(prevProps.dataset_id !== this.props.dataset_id){
-            // If the id is valid. 
+            // If the id is valid.
             if( this.props.dataset_id  && this.props.dataset_id>=0){
                 // Get the graph data. 
                 this.getGraphBundledData(this.props.dataset_id);
@@ -236,12 +246,28 @@ export default class DataRuns extends React.Component<IProps, IState>{
     }
     public render() {
         // Rendering.
-        let {graph_object} = this.state;
+        let {graph_object, model_nlabels, model_eweights} = this.state;
         let dataset_id = -1;
         if(graph_object.bundle_id){
-            dataset_id = graph_object.bundle_id;
+            dataset_id = graph_object.bundle_id;      
+            let nlabel_options: any[] = [];
+            console.log('graph_object', graph_object);
+            if (graph_object.nlabels.length !== 0) {
+                nlabel_options.push("ground_truth");
+            }
+            if (model_nlabels !== null) {
+                nlabel_options = nlabel_options.concat(Object.keys(model_nlabels));
+            }
+            this.props.changeNLabelOptions(nlabel_options);
+
+            let eweight_options: any[] = [];
+            eweight_options = Object.keys(graph_object.eweights);
+            if (model_eweights !== null) {
+                eweight_options = eweight_options.concat(Object.keys(model_eweights));
+            }
+            this.props.changeEWeightOptions(eweight_options);
         }
-        
+
         // Generate Graph View.
         let generateGraphView = (graph_object: any, model_nlabels: any, model_eweights: any, model_nweights: any, 
             subgs: any, NLabelList: any, eweightList: any, subgList: any, width:number, height:number) => {
@@ -258,27 +284,8 @@ export default class DataRuns extends React.Component<IProps, IState>{
                 />
         }
         // Generate Control Panel
-        let generateControlPanel = (dataset_id: number, graph_object: any, model_nlabels: any, model_eweights: any) => {
-            // TODO: nlabels may not exist
-            let nlabel_options: any[] = [];
-            let eweight_options: any[] = [];
-            if (dataset_id >= 0) {
-                if (graph_object.nlabels.length !== 0) {
-                    nlabel_options.push("ground_truth");
-                }
-                if (model_nlabels !== null) {
-                    nlabel_options = nlabel_options.concat(Object.keys(model_nlabels));
-                    // console.log("model_eweights",model_eweights);
-                    // console.log("Object.keys(model_eweights)",Object.keys(model_eweights["GCN"]));
-                    // eweight_options = Object.keys(model_eweights);
-                }
-                eweight_options = Object.keys(graph_object.eweights);
-                if (model_eweights !== null) {
-                    eweight_options = eweight_options.concat(Object.keys(model_eweights));
-                }
-            }
-            // return <ControlPanelContainer nlabel_options={nlabel_options}/>
-            return <ControlPanelContainer nlabel_options={nlabel_options} eweight_options={eweight_options}/>
+        let generateControlPanel = () => {
+            return <ControlPanelContainer/>
         }
         
         // layout is an array of objects, see the demo for more complete usage
@@ -312,7 +319,7 @@ export default class DataRuns extends React.Component<IProps, IState>{
                     this.getCurrentLayoutConfig("GraphView")["height"]):<div />}
                     </div>
                     <div className="PanelBox" key="d" ref={this.ControlPanelRef}>
-                        {generateControlPanel(dataset_id, graph_object, this.state.model_nlabels, this.state.model_eweights)}
+                        {generateControlPanel()}
                     </div>
                 </GridLayout>
                 

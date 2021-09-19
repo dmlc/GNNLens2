@@ -2,7 +2,7 @@
 import * as React from "react";
 import { Select, Button,  Tag, InputNumber } from 'antd';
 import {getNodeColor, constructNeighborSet, getNodeStatisticStr, 
-    constructGraphIn, transform_graphlayout, skew_weight} from '../../../helper';
+    constructGraphIn, skew_weight} from '../../../helper';
 import { SettingOutlined } from '@ant-design/icons';
 import GraphViewSettingsModalContainer from '../../../container/GraphViewSettingsModalContainer';
 import ForceDirectedGraphCanvasContainer from '../../../container/ForceDirectedGraphCanvasContainer';
@@ -228,7 +228,7 @@ export default class GraphView extends React.Component<IProps, IState>{
         // Prepare Properties of Links
         let edge_weighted: boolean;
         let current_eweights;
-        if(eweightList && eweightList.length!=0) {
+        if(eweightList && eweightList.length!==0) {
             edge_weighted = true;
             let graph_eweight_options = Object.keys(common.eweights);
             if (graph_eweight_options.indexOf(eweightList) > -1) {

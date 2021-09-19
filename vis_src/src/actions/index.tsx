@@ -2,7 +2,8 @@ import { DATASET_ID_CHANGE, INIT_DATASET_LIST,
     SELECTED_NODE_ID_LIST_CHANGE, 
     SHOW_SOURCE_CHANGE, SPECIFIC_NODE_ID_LIST_CHANGE, SELECT_INSPECT_NODE_CHANGE,
     CLEAR_ID_INFO,  PREV_GRAPH_JSON_CHANGE, EXTENDED_MODE_CHANGE, GRAPHVIEWSETTINGMODAL_VISIBLE_CHANGE,GRAPHVIEWSTATE_CHANGE, 
-    NLABEL_CHANGE, EWEIGHT_CHANGE, ENABLE_FORCE_DIRECTED_CHANGE} from '../constants';
+    NLABEL_CHANGE, EWEIGHT_CHANGE, ENABLE_FORCE_DIRECTED_CHANGE, 
+    NLABEL_OPTIONS_CHANGE, EWEIGHT_OPTIONS_CHANGE} from '../constants';
 
 export const changeDataset = (dataset_id:number | null) =>({
     type: DATASET_ID_CHANGE,
@@ -57,6 +58,16 @@ export const clearIdInfo = () =>({
 export const initDatasetList = (datasetList:any) =>({
     type: INIT_DATASET_LIST,
     datasetList: datasetList
+})
+
+export const changeNLabelOptions = (NLabelOptions: any) =>({
+    type: NLABEL_OPTIONS_CHANGE,
+    NLabelOptions: NLabelOptions
+})
+
+export const changeEWeightOptions = (EWeightOptions: any) =>({
+    type: EWEIGHT_OPTIONS_CHANGE,
+    EWeightOptions: EWeightOptions
 })
 
 export const changeNLabel = (NLabelList: any) =>({

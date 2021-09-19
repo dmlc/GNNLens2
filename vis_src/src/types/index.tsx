@@ -18,5 +18,7 @@ export type StoreState = {
     extendedMode:any,
     GraphViewSettingsModal_visible:boolean,
     GraphViewState:any,
-    enableForceDirected:boolean
+    enableForceDirected:boolean,
+    NLabelOptions:any,
+    EWeightOptions:any
 };

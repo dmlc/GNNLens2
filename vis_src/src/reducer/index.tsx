@@ -1,7 +1,7 @@
 import { DATASET_ID_CHANGE, INIT_DATASET_LIST,  SELECTED_NODE_ID_LIST_CHANGE,
    SHOW_SOURCE_CHANGE,SPECIFIC_NODE_ID_LIST_CHANGE, SELECT_INSPECT_NODE_CHANGE,CLEAR_ID_INFO, PREV_GRAPH_JSON_CHANGE,
  GRAPHVIEWSTATE_CHANGE, GRAPHVIEWSETTINGMODAL_VISIBLE_CHANGE, EXTENDED_MODE_CHANGE, 
- NLABEL_CHANGE, EWEIGHT_CHANGE, ENABLE_FORCE_DIRECTED_CHANGE} from '../constants';
+ NLABEL_CHANGE, EWEIGHT_CHANGE, ENABLE_FORCE_DIRECTED_CHANGE, NLABEL_OPTIONS_CHANGE, EWEIGHT_OPTIONS_CHANGE} from '../constants';
 import {StoreState} from '../types';
 const initial_state : StoreState = {
     dataset_id : null,
@@ -24,7 +24,9 @@ const initial_state : StoreState = {
     NLabelList: [],
     // eweight_id: null,
     eweightList: [],
-    enableForceDirected: true
+    enableForceDirected: true,
+    NLabelOptions: [],
+    EWeightOptions: []
 }
 // 处理并返回 state 
 export default (state = initial_state, action:any): StoreState => {
@@ -110,6 +112,16 @@ export default (state = initial_state, action:any): StoreState => {
           return {
             ...state,
             enableForceDirected: action.enableForceDirected
+          }
+      case NLABEL_OPTIONS_CHANGE:
+          return {
+            ...state,
+            NLabelOptions: action.NLabelOptions
+          }
+      case EWEIGHT_OPTIONS_CHANGE:
+          return {
+            ...state,
+            EWeightOptions: action.EWeightOptions
           }
       default:
         return state

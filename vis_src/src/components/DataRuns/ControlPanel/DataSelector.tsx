@@ -8,7 +8,7 @@ export interface DataSelectorProps {
     datasetList: any,   // dataset list
     changeDataset: any,  // change dataset
     clearIdInfo: any,    // clear id info
-    initDatasetList: any,  // initialize dataset list
+    initDatasetList: any  // initialize dataset list
 }
 
 export interface DataSelectorState {
