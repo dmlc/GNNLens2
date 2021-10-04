@@ -1,1 +1,1 @@
-# GNNVis
+# GNNLens2

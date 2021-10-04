@@ -1,6 +1,6 @@
 {
-  "short_name": "GNNVis",
-  "name": "GNNVis",
+  "short_name": "GNNLens",
+  "name": "GNNLens",
   "icons": [],
   "start_url": ".",
   "display": "standalone",
