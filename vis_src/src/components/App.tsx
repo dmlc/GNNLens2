@@ -70,7 +70,7 @@ class App extends React.Component<IProps, IState> {
     return (
       <Layout className="app" >
           <Header className='appHeader'>
-          GNNVis
+          GNNLens
                   <img src={logo} className='appLogo' alt-text="logo"/>
           </Header>
           <Content className='appContent' >
