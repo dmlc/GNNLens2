@@ -6,3 +6,6 @@ vis_src/yarn.lock
 *.ipynb_checkpoints
 *.ipynb
 python/gnnlens/visbuild/data
+python/build/
+python/dist/
+python/gnnlens.egg-info/
