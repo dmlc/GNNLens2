@@ -1,3 +1,0 @@
-[console_scripts]
-gnnlens = gnnlens.server:start_server
-
