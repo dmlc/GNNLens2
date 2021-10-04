@@ -1,0 +1,6 @@
+click
+flask>=1.0
+flask-cors>=3.0.9
+sqlalchemy>=1.1.14
+flask_compress
+numpy

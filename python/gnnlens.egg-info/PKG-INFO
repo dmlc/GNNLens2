@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: gnnlens
+Version: 0.1.0
+Summary: Visualization toolkit for Graph Neural Network
+Home-page: https://github.com/dmlc/GNNLens2
+Maintainer: GNNLens Team
+License: APACHE
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
