@@ -83,3 +83,17 @@ As you move the cursor to a particular node, GNNLens2 will display its node ID a
 <p align="center">
   <img width=60% height=60% src="../figures/tutorial_1/hover_node.png" />
 </p>
+
+If you want to examine a subgraph centered at a particular node, you can simply click on it. GNNLens2 will then display its two-hop subgraph by default and the node you clicked on will be highlighted. You can click the overview box to put the subgraph in the center.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_1/two_hop.png" />
+</p>
+
+You can switch the subgraph option in the “Subgraph” drop-down list.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_1/subgraph_options.png" />
+</p>
+
+To terminate GNNLens2, use `ctrl + c`.
