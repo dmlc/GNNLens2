@@ -77,3 +77,9 @@ You can also zoom in or out on the graph. The figure below is the result of zoom
 <p align="center">
   <img width=60% height=60% src="../figures/tutorial_1/zoom.png" />
 </p>
+
+As you move the cursor to a particular node, GNNLens2 will display its node ID and highlight its one-hop neighborhood.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_1/hover_node.png" />
+</p>
