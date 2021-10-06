@@ -89,3 +89,21 @@ writer.add_model(graph_name='Cora', model_name='GCN_L2',
 # Finish dumping
 writer.close()
 ```
+
+## Launch GNNLens2
+
+To launch GNNLens2, run the following command line.
+
+```bash
+gnnlens --logdir tutorial_nlabel
+```
+
+By entering `localhost:7777` in your web browser address bar, you can see the GNNLens2 interface. `7777` is the default port GNNLens2 uses. You can specify an alternative one by adding `--port xxxx` after the command line and change the address in the web browser accordingly.
+
+## GNNLens2 Interface
+
+The second selector in the control panel on the left is the nlabel selector. After you select a graph and click the nlabel selector, it will display the available node labels from different sources. The options include `ground_truth` for the ground truth node labels and the model names for the model predictions.
+
+<p align="center">
+  <img src="../figures/tutorial_2/nlabel_selector.png" />
+</p>
