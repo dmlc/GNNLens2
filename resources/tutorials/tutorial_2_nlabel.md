@@ -26,7 +26,7 @@ writer.add_graph(name='Cora', graph=graph,
                  nlabels=nlabels, num_nlabel_types=num_classes)
 ```
 
-Next, we train two graph convolutional networks (GCN) for node classification, GCN_L1 (GCN with one layer) and GCN_L2 (GCN with two layers). Once trained, we retrieve the predicted node classes and dump them to local files
+Next, we train two graph convolutional networks (GCN) for node classification, `GCN_L1` (GCN with one layer) and `GCN_L2` (GCN with two layers). Once trained, we retrieve the predicted node classes and dump them to local files
 
 ```python
 import torch
