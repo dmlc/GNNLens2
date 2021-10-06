@@ -65,3 +65,9 @@ For a large graph, you can view different parts of it by clicking on the overvie
 <p align="center">
   <img width=60% height=60% src="../figures/tutorial_1/overview.png" />
 </p>
+
+You can drag the graph by pressing and holding the mouse button. The figure below is the result of dragging the graph to the right.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_1/drag.png" />
+</p>
