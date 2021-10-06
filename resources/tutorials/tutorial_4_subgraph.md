@@ -118,3 +118,7 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 ## GNNLens2 Interface
 
 After you select a graph and a node label option, you can click on an arbitrary node.
+
+<p align="center">
+  <img width=80% height=80% src="../figures/tutorial_4/subgraph.png" />
+</p>
