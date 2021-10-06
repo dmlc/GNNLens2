@@ -44,7 +44,9 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 
 ## GNNLens2 Interface
 
-![empty interface](../figures/tutorial_1/empty_interface.png)
+<p align="center">
+  <img src="../figures/tutorial_1/empty_interface.png" />
+</p>
 
 The interface is empty as no graph is selected. The control panel on the left has multiple selectors for users to make selections. The first selector is the graph selector. You can click it and select a graph to visualize from the drop-down list. The options in the drop-down list are the names you passed to `add_graph`.
 
