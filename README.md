@@ -45,6 +45,11 @@ print(gnnlens.__version__)
 # 0.1.0
 ```
 
+## Tutorials
+
+We provide a set of tutorials to get you started with the library:
+- [Tutorial 1: Graph structure](resources/tutorials/tutorial_1_graph.md)
+
 ## Team
 
 **HKUST VisLab**: [Zhihua Jin](jnzhihuoo1), [Huamin Qu](http://huamin.org/)
