@@ -43,3 +43,5 @@ gnnlens --logdir tutorial_graph
 By entering `localhost:7777` in your web browser address bar, you can see the GNNLens2 interface like below. `7777` is the default port GNNLens2 uses. You can specify an alternative one by adding `--port xxxx` after the command line and change the address in the web browser accordingly.
 
 ## GNNLens2 Interface
+
+![empty interface](../figures/tutorial_1/empty_interface.png)
