@@ -102,8 +102,16 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 
 ## GNNLens2 Interface
 
-The second selector in the control panel on the left is the nlabel selector. After you select a graph and click the nlabel selector, it will display the available node labels from different sources. The options include `ground_truth` for the ground truth node labels and the model names for the model predictions.
+The second selector in the control panel on the left is the nlabel selector. After you select a graph and click the nlabel selector, it will display the available node labels from different sources. The options include `ground_truth` for the ground truth node labels and the model names passed to `add_model` for the model predictions.
 
 <p align="center">
   <img src="../figures/tutorial_2/nlabel_selector.png" />
 </p>
+
+You can select an option to color nodes using a source of node labels. The color legend is in the lower left corner.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_2/real_color.png" />
+</p>
+
+The node coloring also applies to subgraphs if you click on a node.
