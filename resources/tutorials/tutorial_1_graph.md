@@ -97,3 +97,7 @@ You can switch the subgraph option in the “Subgraph” drop-down list.
 </p>
 
 To terminate GNNLens2, use `ctrl + c`.
+
+## Next
+
+So far, we've seen how to visualize a graph structure. Now let us look at how to [use node labels to color nodes in visualization](./tutorial_2_nlabel.md). 
