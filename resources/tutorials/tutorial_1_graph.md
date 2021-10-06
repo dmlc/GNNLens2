@@ -57,3 +57,9 @@ After you select a graph, GNNLens2 will plot the corresponding graph as below. G
 <p align="center">
   <img src="../figures/tutorial_1/stop_simulation.png" />
 </p>
+
+For a large graph, you can view different parts of it by clicking on the overview box at the lower-right corner.
+
+<p align="center">
+  <img src="../figures/tutorial_1/overview.png" />
+</p>
