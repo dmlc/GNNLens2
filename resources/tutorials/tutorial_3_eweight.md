@@ -146,3 +146,13 @@ The third selector in the control panel on the left is the eweight selector. Aft
 <p align="center">
   <img width=20% height=20% src="../figures/tutorial_3/eweight_options.png" />
 </p>
+
+GNNLens2 visualizes edge weights with edge thickness. The thicker an edge is, the higher weight it has. The following figure visualizes the attention weight of the first head in the first GAT layer of GAT_L2 (GAT with two layers).
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_3/eweight_subgraph.png" />
+</p>
+
+To terminate GNNLens2, use `ctrl + c`.
+
+## Next
