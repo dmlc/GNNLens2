@@ -119,3 +119,11 @@ The node coloring also applies to subgraphs if you click on a node.
 <p align="center">
   <img width=60% height=60% src="../figures/tutorial_2/subgraph_nlabel.png" />
 </p>
+
+You can even select multiple options and simultaneously color nodes using multiple sources of node labels. In this case, the circles representing the nodes will be replaced by glyphs. The center of the glyph is colored based on the first selected nlabel source. The outer pie chart will be colored based on the rest nlabel sources in a clockwise direction from the top. This allows a direct comparison among the ground truth node labels and the predicted node labels from various models.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_2/glyph.png" />
+</p>
+
+To terminate GNNLens2, use `ctrl + c`.
