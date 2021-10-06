@@ -127,3 +127,7 @@ You can even select multiple options and simultaneously color nodes using multip
 </p>
 
 To terminate GNNLens2, use `ctrl + c`.
+
+## Next
+
+So far, we've seen how to visualize node labels. Now let us look at how to [use edge weights in visualization](./tutorial_3_eweight.md). 
