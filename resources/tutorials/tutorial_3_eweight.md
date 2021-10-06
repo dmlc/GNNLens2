@@ -144,5 +144,5 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 The third selector in the control panel on the left is the eweight selector. After you select a graph and click the eweight selector, it will display the available edge weights from different sources. The options take the form `A/B`, where `A` is the eweight source and `B` is the eweight name.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_3/eweight_options.png" />
+  <img width=40% height=40% src="../figures/tutorial_3/eweight_options.png" />
 </p>
