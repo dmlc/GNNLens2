@@ -45,7 +45,7 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 ## GNNLens2 Interface
 
 <p align="center">
-  <img src="../figures/tutorial_1/empty_interface.png" width=60% height=60%/>
+  <img width=60% height=60% src="../figures/tutorial_1/empty_interface.png" />
 </p>
 
 The interface is empty as no graph is selected. The control panel on the left has multiple selectors for users to make selections. The first selector is the graph selector. You can click it and select a graph to visualize from the drop-down list. The options in the drop-down list are the names you passed to `add_graph`.
@@ -57,11 +57,11 @@ The interface is empty as no graph is selected. The control panel on the left ha
 After you select a graph, GNNLens2 will plot the corresponding graph as below. GNNLens2 determines the graph layout (node positions) on the fly using a force-directed graph drawing algorithm. The algorithm simulates the physical forces on nodes. The simulation stops when you click the “Stop Simulation” button and starts when you click the same button again.
 
 <p align="center">
-  <img src="../figures/tutorial_1/stop_simulation.png" width=60% height=60%/>
+  <img width=60% height=60% src="../figures/tutorial_1/stop_simulation.png" />
 </p>
 
 For a large graph, you can view different parts of it by clicking on the overview box at the lower-right corner.
 
 <p align="center">
-  <img src="../figures/tutorial_1/overview.png" width=60% height=60%/>
+  <img width=60% height=60% src="../figures/tutorial_1/overview.png" />
 </p>
