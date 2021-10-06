@@ -51,6 +51,7 @@ We provide a set of tutorials to get you started with the library:
 - [Tutorial 1: Graph structure](resources/tutorials/tutorial_1_graph.md)
 - [Tutorial 2: Ground truth and predicted node labels](resources/tutorials/tutorial_2_nlabel.md)
 - [Tutorial 3: Edge weights and attention](resources/tutorials/tutorial_3_eweight.md)
+- [Tutorial 4: Weighted subgraphs and explanation methods](resources/tutorials/tutorial_4_subgraph.md)
 
 ## Team
 

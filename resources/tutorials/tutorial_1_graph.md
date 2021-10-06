@@ -45,7 +45,7 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 ## GNNLens2 Interface
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/empty_interface.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/empty_interface.png" />
 </p>
 
 The interface is empty as no graph is selected. The control panel on the left has multiple selectors for users to make selections. The first selector is the graph selector. You can click it and select a graph to visualize from the drop-down list. The options in the drop-down list are the names you passed to `add_graph`.
@@ -57,43 +57,43 @@ The interface is empty as no graph is selected. The control panel on the left ha
 After you select a graph, GNNLens2 will plot the corresponding graph as below. GNNLens2 determines the graph layout (node positions) on the fly using a force-directed graph drawing algorithm. The algorithm simulates the physical forces on nodes. The simulation stops when you click the “Stop Simulation” button and starts when you click the same button again.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/stop_simulation.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/stop_simulation.png" />
 </p>
 
 For a large graph, you can view different parts of it by clicking on the overview box at the lower-right corner.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/overview.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/overview.png" />
 </p>
 
 You can drag the graph by pressing and holding the mouse button. The figure below is the result of dragging the graph to the right.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/drag.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/drag.png" />
 </p>
 
 You can also zoom in or out on the graph. The figure below is the result of zooming in on the graph.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/zoom.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/zoom.png" />
 </p>
 
 As you move the cursor to a particular node, GNNLens2 will display its node ID and highlight its one-hop neighborhood.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/hover_node.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/hover_node.png" />
 </p>
 
 If you want to examine a subgraph centered at a particular node, you can simply click on it. GNNLens2 will then display its two-hop subgraph by default and the node you clicked on will be highlighted. You can click the overview box to put the subgraph in the center.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/two_hop.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/two_hop.png" />
 </p>
 
 You can switch the subgraph option in the “Subgraph” drop-down list.
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_1/subgraph_options.png" />
+  <img width=80% height=80% src="../figures/tutorial_1/subgraph_options.png" />
 </p>
 
 To terminate GNNLens2, use `ctrl + c`.

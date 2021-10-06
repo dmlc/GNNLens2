@@ -150,9 +150,11 @@ The third selector in the control panel on the left is the eweight selector. Aft
 GNNLens2 visualizes edge weights with edge thickness. The thicker an edge is, the higher weight it has. The following figure visualizes the attention weight of the first head in the first GAT layer of GAT_L2 (GAT with two layers).
 
 <p align="center">
-  <img width=60% height=60% src="../figures/tutorial_3/eweight_subgraph.png" />
+  <img width=80% height=80% src="../figures/tutorial_3/eweight_subgraph.png" />
 </p>
 
 To terminate GNNLens2, use `ctrl + c`.
 
 ## Next
+
+So far, we've seen how to visualize edge weights. Now let us look at how to [visualize subgraphs and model explanations](./tutorial_4_subgraph.md). 
