@@ -1,4 +1,4 @@
-![#GNNLens2](resources/logo.png)
+<img src="resources/logo.png" width=50% height=50%>
 
 <img src="resources/README.png">
 
