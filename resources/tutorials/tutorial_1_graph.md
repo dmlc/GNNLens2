@@ -1,4 +1,4 @@
-# Graph structure
+# Tutorial 1: Graph structure
 
 Graph structure plays a critical role in developing a GNN. You may want to visualize the whole graph to roughly understand the sparsity of it and if it has subgraphs of a particular pattern.
 
