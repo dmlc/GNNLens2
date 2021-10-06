@@ -71,3 +71,9 @@ You can drag the graph by pressing and holding the mouse button. The figure belo
 <p align="center">
   <img width=60% height=60% src="../figures/tutorial_1/drag.png" />
 </p>
+
+You can also zoom in or out on the graph. The figure below is the result of zooming in on the graph.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_1/zoom.png" />
+</p>
