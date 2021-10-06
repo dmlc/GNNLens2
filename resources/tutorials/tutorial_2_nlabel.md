@@ -115,3 +115,7 @@ You can select an option to color nodes using a source of node labels. The color
 </p>
 
 The node coloring also applies to subgraphs if you click on a node.
+
+<p align="center">
+  <img width=60% height=60% src="../figures/tutorial_2/subgraph_nlabel.png" />
+</p>
