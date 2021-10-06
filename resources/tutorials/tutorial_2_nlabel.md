@@ -14,3 +14,14 @@ graph = dataset[0]
 nlabels = graph.ndata['label']
 num_classes = dataset.num_classes
 ```
+
+We dump them to a local file that GNNLens2 can read. Compared with [the previous section](./tutorial_1_graph.md), we additionally dump the node classes and the number of node classes. 
+
+```python
+from gnnlens import Writer
+
+# Specify the path to create a new directory for dumping data files.
+writer = Writer('tutorial_nlabel')
+writer.add_graph(name='Cora', graph=graph, 
+                 nlabels=nlabels, num_nlabel_types=num_classes)
+```
