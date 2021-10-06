@@ -42,3 +42,7 @@ import gnnlens
 print(gnnlens.__version__)
 # 0.1.0
 ```
+
+## Contributors
+
+**HKUST VisLab**: 
