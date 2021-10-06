@@ -4,7 +4,7 @@ GNNLens2 is an interactive visualization tool for graph neural networks (GNN). I
 
 ## Installation
 
-You need to install DGL following the instructions [here](https://www.dgl.ai/pages/start.html) and then do
+You need to first install [PyTorch](https://pytorch.org/) and [DGL](https://www.dgl.ai/pages/start.html) and then do
 
 ```bash
 pip install -U flask-cors
