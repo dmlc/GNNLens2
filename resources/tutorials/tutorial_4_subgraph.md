@@ -123,8 +123,18 @@ After you select a graph and a node label option, you can click on an arbitrary 
   <img width=80% height=80% src="../figures/tutorial_4/subgraph.png" />
 </p>
 
-You can enter node ID 0 in the Id box at the top and click on the subgraph drop-down list. The subgraph options now include `IntegratedGradients`. 
+You can enter node ID 1 in the Id box at the top and click on the subgraph drop-down list. The subgraph options now include `IntegratedGradients`. 
 
 <p align="center">
   <img width=20% height=20% src="../figures/tutorial_4/ig_subgraph.png" />
 </p>
+
+After you select `IntegratedGradients`, GNNLens2 will display the subgraph you dumped earlier associated with node 1. GNNLens2 visualizes the importance weights of the nodes by opacity for node color.
+
+<p align="center">
+  <img width=80% height=80% src="../figures/tutorial_4/1_ig.png" />
+</p>
+
+If you enter a node ID for which you did not dump a subgraph, it won’t display anything.
+
+To terminate GNNLens2, use `ctrl + c`.
