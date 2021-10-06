@@ -296,11 +296,13 @@ export default class GraphView extends React.Component<IProps, IState>{
     //    width / height: the size of graph view.
     public constructEdgeGraphJson(graph_object:any, model_nlabels:any, NLabelList:any, select_inspect_node:number, 
         subg_name:string, subgs:any, enableForceDirected:boolean, showSource:boolean, width:number, height:number){
+        let NLabelName = NLabelList.join("_");
         let common = graph_object;
 
         // 1. Data package fingerprint. 
         let graph_name = common.name+"_"+common.bundle_id
                         +"_SUBG_"+subg_name+"_SUBGEND_"
+                        +"_NLABEL_"+NLabelName+"_NLABELEND_"
                         +"_NODE_"+select_inspect_node+"_NODEEND_"
                         +enableForceDirected+"_"+width+"_"+height+"_";
         let node_num = common.num_nodes;
@@ -351,6 +353,9 @@ export default class GraphView extends React.Component<IProps, IState>{
             init_color = [dummycolor];
         }
         let selectedNodeOrder = 0;
+        console.log('select_inspect_node', select_inspect_node);
+        console.log('showSource', showSource);
+        console.log('selectedNodeIdList', selectedNodeIdList);
         for(let i = 0; i<node_num;i++){
             let label = 0;
             let index = i;
