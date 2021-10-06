@@ -51,3 +51,9 @@ The interface is empty as no graph is selected. The control panel on the left ha
 <p align="center">
   <img src="../figures/tutorial_1/control_panel.png" />
 </p>
+
+After you select a graph, GNNLens2 will plot the corresponding graph as below. GNNLens2 determines the graph layout (node positions) on the fly using a force-directed graph drawing algorithm. The algorithm simulates the physical forces on nodes. The simulation stops when you click the “Stop Simulation” button and starts when you click the same button again.
+
+<p align="center">
+  <img src="../figures/tutorial_1/stop_simulation.png" />
+</p>
