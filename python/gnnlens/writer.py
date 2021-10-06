@@ -32,7 +32,7 @@ class Writer():
         be either a relative path or an absolute path.
     """
     def __init__(self, logdir):
-        os.makedirs(logdir, exist_ok=False)
+        os.makedirs(logdir)
         self.logdir = logdir
         self.graph_names = []
         self.graph_data = dict()

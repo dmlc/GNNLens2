@@ -15,5 +15,5 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from .libinfo import __version__
-from .writer import *
+# current version
+__version__ = '0.1.0'
