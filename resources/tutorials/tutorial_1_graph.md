@@ -17,7 +17,7 @@ citeseer_dataset = CiteseerGraphDataset()
 citeseer_graph = citeseer_dataset[0]
 ```
 
-Next, we need to dump the graph structures to a local file that GNNLens2 can read. GNNLens2 provides a built-in class Writer for this purpose. You can add an arbitrary number of graphs, one at a time. 
+Next, we need to dump the graph structures to a local file that GNNLens2 can read. GNNLens2 provides a built-in class `Writer` for this purpose. You can add an arbitrary number of graphs, one at a time. 
 
 Once you finish adding data, you need to call **writer.close()**.
 
@@ -40,6 +40,6 @@ To launch GNNLens2, run the following command line.
 gnnlens --logdir tutorial_graph
 ```
 
-By entering localhost:7777 in your web browser address bar, you can see the GNNLens2 interface like below. 7777 is the default port GNNLens2 uses. You can specify an alternative one by adding --port xxxx after the command line and change the address in the web browser accordingly.
+By entering `localhost:7777` in your web browser address bar, you can see the GNNLens2 interface like below. `7777` is the default port GNNLens2 uses. You can specify an alternative one by adding `--port xxxx` after the command line and change the address in the web browser accordingly.
 
 ## GNNLens2 Interface
