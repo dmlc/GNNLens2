@@ -55,7 +55,7 @@ We provide a set of tutorials to get you started with the library:
 
 ## Team
 
-**HKUST VisLab**: [Zhihua Jin](jnzhihuoo1), [Huamin Qu](http://huamin.org/)
+**HKUST VisLab**: [Zhihua Jin](https://github.com/jnzhihuoo1), [Huamin Qu](http://huamin.org/)
 
 **AWS Shanghai AI Lab**: [Mufei Li](https://github.com/mufeili), [Wanru Zhao](https://github.com/Ryan0v0) (work done during internship), [Jian Zhang](https://github.com/zhjwy9343), [Minjie Wang](https://jermainewang.github.io/)
 
