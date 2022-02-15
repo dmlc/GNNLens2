@@ -1,10 +1,10 @@
 # Tutorial 3: Edge weights and attention
 
-The edges in a graph can be associated with a weight, e.g., connectivity strength. Attention-based graph neural networks like graph attention networks (GATs) have been widely used and we can also view learned attention weights as edge weights. GNNLens2 allows visualizing the edge weights like attention weights in a GAT in graph visualization.
+Each edge in a graph can be associated with a weight, e.g., connectivity strength. Attention-based graph neural networks like graph attention networks (GATs) have been widely used and we can also view learned attention weights as edge weights. GNNLens2 allows visualizing the edge weights like attention weights in a GAT in graph visualization.
 
 ## Data preparation
 
-First, we load DGL’s built-in Cora dataset and retrieve its graph structure, node labels (classes) and number of node classes.
+First, we load DGL’s built-in Cora dataset and retrieve its graph structure, node labels (classes) and the number of node classes.
 
 ```python
 from dgl.data import CoraGraphDataset
@@ -15,7 +15,7 @@ nlabels = graph.ndata['label']
 num_classes = dataset.num_classes
 ```
 
-As the Cora graph is not weighted, we generate two types of random edge weights for demonstration purposes. The edge weights are expected to be in range `[0, 1]`.
+As the Cora graph is not weighted, we generate two types of random edge weights for demonstration purposes. The edge weights are expected to be in the range `[0, 1]`.
 
 ```python
 import torch
@@ -141,7 +141,7 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 
 ## GNNLens2 Interface
 
-The third selector in the control panel on the left is the eweight selector. After you select a graph and click the eweight selector, it will display the available edge weights from different sources. The options take the form `A/B`, where `A` is the eweight source and `B` is the eweight name.
+The third selector in the control panel on the left is the `EWeight` selector. After you select a graph and click the `EWeight` selector, it will display the available edge weights from different sources. The options take the form `A/B`, where `A` is the `EWeight` source and `B` is the `EWeight` name.
 
 <p align="center">
   <img width=20% height=20% src="../figures/tutorial_3/eweight_options.png" />
