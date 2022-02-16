@@ -1,10 +1,10 @@
 # Tutorial 2: Ground truth and predicted node labels
 
-The nodes in a graph can be associated with a label like node type or node class. For the task of multiclass node classification, you can have ground truth node labels and node labels predicted from different models. GNNLens2 allows coloring nodes based on node labels in graph visualization and comparing node labels from different sources.
+Each node in a graph can be associated with a label like its node type or node class. For the task of multiclass node classification, you can have ground truth node labels and node labels predicted from different models. GNNLens2 allows coloring nodes based on node labels in graph visualization and comparing node labels from different sources.
 
 ## Data preparation
 
-First, we load DGL’s built-in Cora dataset and retrieve its graph structure, node labels (classes) and number of node classes.
+First, we load DGL’s built-in Cora dataset and retrieve its graph structure, node labels (classes) and the number of node classes.
 
 ```python
 from dgl.data import CoraGraphDataset
@@ -102,7 +102,7 @@ By entering `localhost:7777` in your web browser address bar, you can see the GN
 
 ## GNNLens2 Interface
 
-The second selector in the control panel on the left is the nlabel selector. After you select a graph and click the nlabel selector, it will display the available node labels from different sources. The options include `ground_truth` for the ground truth node labels and the model names passed to `add_model` for the model predictions.
+The second selector in the control panel on the left is the `NLabel` selector. After you select a graph and click the `NLabel` selector, it will display the available node labels from different sources. The options include `ground_truth` for the ground truth node labels and the model names passed to `add_model` for the model predictions.
 
 <p align="center">
   <img src="../figures/tutorial_2/nlabel_selector.png" />
@@ -120,7 +120,7 @@ The node coloring also applies to subgraphs if you click on a node.
   <img width=80% height=80% src="../figures/tutorial_2/subgraph_nlabel.png" />
 </p>
 
-You can even select multiple options and simultaneously color nodes using multiple sources of node labels. In this case, the circles representing the nodes will be replaced by glyphs. The center of the glyph is colored based on the first selected nlabel source. The outer pie chart will be colored based on the rest nlabel sources in a clockwise direction from the top. This allows a direct comparison among the ground truth node labels and the predicted node labels from various models.
+You can even select multiple options and simultaneously color nodes using multiple sources of node labels. In this case, the circles representing the nodes will be replaced by glyphs. The center of the glyph is colored based on the first selected  `NLabel`  source. The outer pie chart will be colored based on the rest  `NLabel`  sources in a clockwise direction from the top. This allows a direct comparison among the ground truth node labels and the predicted node labels from various models.
 
 <p align="center">
   <img width=80% height=80% src="../figures/tutorial_2/glyph.png" />

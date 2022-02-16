@@ -10,7 +10,7 @@ pip install captum
 
 ## Data preparation
 
-First, we load DGL’s built-in Cora dataset and retrieve its graph structure, node labels (classes) and number of node classes.
+First, we load DGL’s built-in Cora dataset and retrieve its graph structure, node labels (classes) and the number of node classes.
 
 ```python
 import dgl
@@ -71,7 +71,7 @@ node_weights = feat_attr.abs().sum(dim=1)
 node_weights = (node_weights - node_weights.min()) / node_weights.max()
 ```
 
-Extract 2-hop subgraphs of node 0 and 1 and dump them to a local file that GNNLens2 can read. The subgraph name corresponds to a group of subgraphs. In a subgraph group, each node can be associated with at most one subgraph. For each subgraph, we dump its node and edge IDs in the original graph and optionally subgraph node and edge weights.
+Extract 2-hop subgraphs of node 0 and node 1, and dump them to a local file that GNNLens2 can read. The subgraph name corresponds to a group of subgraphs. In a subgraph group, each node can be associated with at most one subgraph. For each subgraph, we dump its node and edge IDs in the original graph and optionally subgraph node and edge weights.
 
 ```python
 import dgl
