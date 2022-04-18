@@ -26,7 +26,7 @@ setup(
     url='https://github.com/dmlc/GNNLens2',
     install_requires=[
         'click',
-        'flask>=1.0',
+        'flask>=1.0,<2.1.0',
         'flask-cors>=3.0.9',
         'sqlalchemy>=1.1.14',
         'flask_compress',
