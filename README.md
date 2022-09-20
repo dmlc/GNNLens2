@@ -23,6 +23,7 @@ pip install -U flask-cors
 ### Installation for the latest stable version
 
 ```bash
+pip install Flask==2.0.3
 pip install gnnlens
 ```
 
